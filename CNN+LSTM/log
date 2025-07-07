@@ -1,0 +1,22 @@
+[2024-12-11 20:18:21,625 INFO]{'max_epochs': 2000, 'devices': 1, 'precision': 16, 'accelerator': 'auto', 'data': 'my', 'model_name': 'CNNLSTM', 'settings': 'supervised', 'log_path': './log', 'batch_size': 64, 'seq_len': 32, 'pre_len': 1, 'split_ratio': 0.8, 'normalize': True, 'cnn_channels': 16, 'lstm_hidden_dim': 32, 'lstm_layers': 1, 'learning_rate': 5e-05, 'weight_decay': 0.0001, 'loss': 'mse'}
+[2024-12-11 20:18:21,660 INFO]Using 16bit Automatic Mixed Precision (AMP)
+[2024-12-11 20:18:21,666 INFO]GPU available: True (cuda), used: True
+[2024-12-11 20:18:21,666 INFO]TPU available: False, using: 0 TPU cores
+[2024-12-11 20:18:21,666 INFO]HPU available: False, using: 0 HPUs
+[2024-12-11 20:18:21,668 INFO]You are using a CUDA device ('NVIDIA GeForce RTX 4060 Laptop GPU') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+[2024-12-11 20:18:21,687 INFO]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+[2024-12-11 20:18:22,721 INFO]Loading `train_dataloader` to estimate number of stepping batches.
+[2024-12-11 20:18:22,723 INFO]
+  | Name  | Type    | Params | Mode 
+------------------------------------------
+0 | model | CNNLSTM | 6.5 K  | train
+------------------------------------------
+6.5 K     Trainable params
+0         Non-trainable params
+6.5 K     Total params
+0.026     Total estimated model params size (MB)
+4         Modules in train mode
+0         Modules in eval mode
+[2024-12-11 20:46:41,435 INFO]Restoring states from the checkpoint path at E:\CNN+LSTM\tb_logs\my_model\best_model.ckpt
+[2024-12-11 20:46:41,441 INFO]LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+[2024-12-11 20:46:41,444 INFO]Loaded model weights from the checkpoint at E:\CNN+LSTM\tb_logs\my_model\best_model.ckpt
